@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffb366 0%, #ffd966 50%, #90ee90 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .floating-emoji {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .floating-emoji:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .floating-emoji:nth-child(2) {
+    top: 20%;
+    right: 15%;
+    animation-delay: 1s;
+  }
+
+  .floating-emoji:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    animation-delay: 2s;
+  }
+
+  .floating-emoji:nth-child(4) {
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3s;
+  }
+
+  .floating-emoji:nth-child(5) {
+    top: 50%;
+    left: 5%;
+    animation-delay: 4s;
+  }
+
+  .floating-emoji:nth-child(6) {
+    top: 60%;
+    right: 5%;
+    animation-delay: 5s;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-shadow {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-hover {
+    transition: all 0.3s ease;
+  }
+
+  .button-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}

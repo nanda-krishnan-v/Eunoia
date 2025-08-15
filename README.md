@@ -1,4 +1,4 @@
-# Happiness Meter 🌟
+# Eunoia🌟
 
 A cheerful, responsive, single-page React application that measures your happiness score based on answers to randomized lifestyle and mood questions.
 
@@ -159,3 +159,4 @@ This project is open source and available under the MIT License.
 ---
 
 **Made with ❤️ and lots of happiness!** 😊
+
